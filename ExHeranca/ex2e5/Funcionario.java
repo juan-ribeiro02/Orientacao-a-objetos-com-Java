@@ -1,4 +1,4 @@
-package ExHeranca.ex2;
+package ExHeranca.ex2e5;
 
 public class Funcionario {
     protected String nome;

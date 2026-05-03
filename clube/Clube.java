@@ -1,6 +1,4 @@
-package teste;
-
-import java.util.Scanner;
+package clube;
 
 public class Clube {
     private String nome;

@@ -1,4 +1,4 @@
-package teste;
+package clube;
 
 import java.util.ArrayList;
 import java.util.Scanner;
