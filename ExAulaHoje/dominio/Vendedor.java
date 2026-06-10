@@ -17,8 +17,15 @@ public class Vendedor extends Funcionario{
     }
 
     @Override
-    public void exibeVendedor(){
-        super.exibeVendedor();
-        System.out.println("Comissao: R$" + comissao);
+    public double calcularPagamento(){
+        return getSalario() + comissao;
+    }    
+
+    @Override
+    public String toString(){
+        return "CPF: " + getCPF() +
+                " | Salário: R$" + getSalario() +
+                " | Comissao: R$" + getComissao() +
+                " | Pagamento: R$" + calcularPagamento();
     }
 }

@@ -1,6 +1,6 @@
 package ExAulaHoje.dominio;
 
-public abstract class Funcionario {
+public class Funcionario implements Pagavel{
     protected String cpf;
     protected double salario;
 
@@ -25,8 +25,15 @@ public abstract class Funcionario {
         return salario;
     }
 
-    public void exibeVendedor(){
-        System.out.println("CPF: " + cpf);
-        System.out.println("Salario: R$" + salario);
+    @Override
+    public double calcularPagamento(){
+        return salario;
+    }
+    
+    @Override
+    public String toString(){
+        return "CPF: " + cpf +
+                " | Salário R$" + salario +
+                " | Pagamento: R$" + calcularPagamento();
     }
 }

@@ -17,8 +17,15 @@ public class Diretor extends Funcionario{
     }
 
     @Override
-    public void exibeVendedor(){
-        super.exibeVendedor();
-        System.out.println("Bonificacao: R$" + bonificacao);
+    public double calcularPagamento(){
+        return getSalario() + bonificacao;
+    }
+
+    @Override
+    public String toString(){
+        return "CPF: " + getCPF() +
+                " | Salário: R$" + getSalario() +
+                " | Bonificação: R$" + getBonificacao() +
+                " | Pagamento: R$" + calcularPagamento();
     }
 }
